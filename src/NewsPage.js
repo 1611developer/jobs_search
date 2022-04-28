@@ -28,7 +28,7 @@ const NewsPage = () => {
         const fetchData = async () => {
             try {
                 const { data } = await axios.get(
-                    "http://hn.algolia.com/api/v1/search_by_date?tags=story",
+                    "https://hn.algolia.com/api/v1/search_by_date?tags=story",
                 {
                     params: {page: currentPage, query},
                 }
