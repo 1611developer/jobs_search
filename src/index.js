@@ -1,7 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+// Create a root.
+const container = document.getElementById("root");
+const root = createRoot(container); // createRoot(container!) if you use TypeScript
 
-//cleaner, responsive HackerNews
+// Initial render.
+root.render(<App />);
+
+// cleaner, responsive job search/listings

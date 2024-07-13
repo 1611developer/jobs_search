@@ -1,8 +1,10 @@
 import './App.css';
-import NewsPage from "./NewsPage";
+import ProductsPage from "./ProductsPage";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const App = () => {
-    return <NewsPage />
+    return <ProductsPage />
 }
 
 export default App;
+
